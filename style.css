@@ -114,11 +114,12 @@ a:hover {
   font-size: 18px;
 } 
 
+/* environment section */
 .Environment {
   color: black;
   /* margin-top: 20px; */
-  background-color: #ffffff;
-  height: 100%;
+  background-color: #fff;
+  height: 70vh;
 }.grid-container {
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
@@ -137,10 +138,18 @@ a:hover {
 } .img p {
   font-weight: bold;
 }
-
-.grid-container-2 {
-  /* background-color: #d3d3d3; */ 
-} 
+  /* environment section ends */
+  /* achievements section */
+.grip {
+  padding: 10px;
+  background-color: #d3d3d3; 
+} .grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+} .img img{
+  width: 100%;
+}
 
 
 @media (max-width: 480px) {
