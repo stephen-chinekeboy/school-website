@@ -34,7 +34,7 @@
   list-style: none;
 }
 
-li a{
+.nav-bar li a{
   font-size: 20px;
   font-weight: lighter;
   text-decoration: none;
@@ -140,16 +140,18 @@ a:hover {
 }
   /* environment section ends */
   /* achievements section */
-.grip {
+/* .grip {
   padding: 10px;
   background-color: #d3d3d3; 
 } .grid-container-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-} .img img{
+} .img-2 img{
+  height: 60vh;
   width: 100%;
-}
+  border-radius: 10px;
+} */
 
 
 @media (max-width: 480px) {
