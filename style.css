@@ -6,7 +6,7 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-header {
+ header {
   background-color: #333;
   color: white;
   padding: 5px;
@@ -45,13 +45,12 @@ li a{
 a:hover {
   color: #fb3f00;
   transition: 0.5s;
-}
+} 
 /* nav ends */
 
 /* hero section begins */
 .hero {
-  background: skyblue;
-  /* background: url('/assets/zhejiang-university-3776783_640.jpg'); */
+  background-color: skyblue;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,18 +112,19 @@ a:hover {
   margin-bottom: 5px;
 } .text-box p {
   font-size: 18px;
-}
+} 
 
 .Environment {
   color: black;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background-color: #ffffff;
+  height: 100%;
 }.grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:  1fr 1fr 1fr;
   gap: 40px;
-} p {
-  font-size: 15px;
+}.text p {
+  font-size: 20px;
   font-weight: light;
 }
 
@@ -134,14 +134,13 @@ a:hover {
 } .img img {
   border-radius: 10px;
   width: 100%;
-} .img img:hover {
-  
+} .img p {
+  font-weight: bold;
 }
 
 .grid-container-2 {
-  margin-top: 40px;
-  background-color: #d3d3d3;
-}
+  /* background-color: #d3d3d3; */ 
+} 
 
 
 @media (max-width: 480px) {
