@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* color: rgb(238, 88, 88); */
+} .logo {
+  color: rgb(224, 64, 64);
+  transition: all 0.5s linear;
+} .logo:hover {
+  color: white;
+  transition: all 0.5s linear;
+} .nav-bar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+} .nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.5s linear;
+} .nav-bar a:hover {
+  color: orange;
+  transition: all 0.5s linear;
+} .hamburger{
+  font-size: 22px;
+  color: red;
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+  /* header section ends */
+
+  /* about section begins */
+
+.sec {
+  background: skyblue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}.hero {
+  text-align: center;
+} .hero h2{
+  font-size: 70px;
+  color: white;
+} .hero p {
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+} .hero button {
+  color: white;
+  padding: 20px 60px;
+  background-color: rgb(224, 64, 64);
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s linear;
+  font-weight: bold;
+} .hero button:hover {
+  background-color: white;
+  color: rgb(224, 64, 64);
+  transition: all 0.5s linear;
+  font-weight: bold;
+}
+  /* hero section ends */
+
+  /* about section begins */
+
+.about {
+  background-color: lavender;
+}
+
+@media (max-width: 480px) {
+  .nav-bar ul{
+    display: none;
+  } .logo {
+    font-size: 25px;
+  } .hamburger {
+    display: flex;
+  }
+
+  .hero h2{
+    font-size: 40px;
+  } .hero p {
+    font-size: 20px;
+  }
+} 
+

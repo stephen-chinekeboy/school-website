@@ -1,3 +1,3 @@
 function goToReg() {
-  window.location.href = "/register.html"
+  window.location.href="/registration.html"
 }
