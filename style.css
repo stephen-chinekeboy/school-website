@@ -51,7 +51,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 40vh;
+  min-height: 80vh;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,12 +60,12 @@ header {
 }.hero {
   text-align: center;
 } .hero h2{
-  font-size: 70px;
+  font-size: 80px;
   color: white;
 } .hero p {
   color: white;
   font-size: 30px;
-  margin: 10px;
+  margin: 12px;
   font-weight: bold;
 } .hero button {
   color: white;
@@ -126,10 +127,13 @@ header {
     display: flex;
   }
 
+  .sec {
+    height: 40vh;
+  }
   .hero h2{
     font-size: 26px;
   } .hero p {
-    font-size: 10px;
+    font-size: 15px;
   } .hero button {
     padding: 10px 10px;
     font-size: 14px;
@@ -147,6 +151,10 @@ header {
     /* overflow: hidden; */
   } .img {
     width: 100%;
+  }
+
+  @media (max-width: 1240px) {
+
   }
 }  
 
