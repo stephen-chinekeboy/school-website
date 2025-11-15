@@ -19,6 +19,7 @@ header {
 } .logo {
   color: rgb(224, 64, 64);
   transition: all 0.5s linear;
+  font-size: 2rem;
 } .logo:hover {
   color: white;
   transition: all 0.5s linear;
@@ -84,15 +85,7 @@ header {
 }
   /* hero section ends */
 
-  /* @keyframes fade-in{
-    0% {
-      opacity: 0;
-    }
 
-    100% {
-      opacity: 1;
-    }
-  } */
   /* about section begins */
 
 .about {
@@ -110,14 +103,49 @@ header {
   height: 100%;
 } .img img {
   width: 100%;
-  height: 100%;
+  max-width: 500px;
   overflow: hidden;
+  animation: fadeIn 0.8s ease both;
 } .text-box h2{
   text-align: center;
 } .text-box p {
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 25px;
 }
+  /* about ends */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  /* environment section begins */
+.environs {
+  background-color: white;
+  padding: 5px;
+}.environs .text {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+} .environment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+} .environment .img-1 {
+  height: 200px;
+} .environment  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+  animation: fadeIn 0.8s ease both;
+} .environment p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+
 @media (max-width: 480px) {
   .nav-bar ul{
     display: none;
@@ -153,8 +181,6 @@ header {
     width: 100%;
   }
 
-  @media (max-width: 1240px) {
-
-  }
+  
 }  
 
