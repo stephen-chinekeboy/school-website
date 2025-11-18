@@ -3,9 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Registration file</title>
+  <link rel="stylesheet" href="/styles/registration.css">
 </head>
 <body>
-  <p>hi</p>
+  <form action="">
+     <h1>Stevenson's Academy</h1>
+     <P>Fill In The Form Below To Register</P>
+
+     <div class="input-container">
+        <div class="inputs">
+          <label for="f-name">First Name</label>
+          <input id="f-name" type="text" name="name" placeholder="First-Name">
+        </div>
+
+        <div class="inputs">
+          <label for="s-name">Second Name</label>
+          <input type="text" name="s-name" placeholder="Second-Name">
+        </div>
+
+        <div class="inputs">
+          <label for="date">Date Of Birth</label>
+          <input id="date" type="date" name="date">
+        </div>
+
+        <div class="inputs">
+          <label for="address">House Address
+            <input id="address" type="text" name="address" placeholder="House Address">
+          </label>
+
+        </div>
+
+        <div class="inputs">
+          <label for="p-origin">Local Government</label>
+          <input id="p-origin" type="text" name="p-origin" placeholder="Place Of Origin" required>
+        </div>
+
+        <div class="inputs">
+          <label for="sel">Select State Of Origin</label>
+          <select name="select">
+            <option value="1">Enugu State</option>
+            <option value="2">Jigawa</option>
+            <option value="3">Abuja</option>
+            <option value="4">Lagos State</option>
+            <option value="5">Kaduna</option>
+            <option value="6">Ebonyi State</option>
+            <option value="7">Abia State</option>
+            <option value="8">Imo State</option>
+            <option value="9">Benue State</option>
+            <option value="10">Anambra State</option>
+            <option value="11">Kano Sate</option>
+          </select>
+        </div>
+
+     </div>
+
+     <div class="inputs">
+      <button>
+        Submit
+      </button>
+     </div>
+
+     <!-- <div class="backdrop"></div> -->
+  </form>
 </body>
 </html>
