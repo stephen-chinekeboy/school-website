@@ -284,9 +284,14 @@ footer {
   }
 
   .achievements {
-    row-gap: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    /* row-gap: 90px; */
   } .achievements img {
     height: 60vh;
+  } .achievements p {
+    font-size: 17px;
   }
   
   .text {
