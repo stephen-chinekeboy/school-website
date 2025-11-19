@@ -124,7 +124,8 @@ header {
 .img img {
   border-radius: 10px;
   width: 100%;
-  max-width: 500px;
+  height: 100%;
+  /* max-width: 760px; */
   overflow: hidden;
   animation: fadeIn 0.8s ease both;
 } 
@@ -264,7 +265,7 @@ footer {
   .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   } .flex-container img {
     border-end-end-radius: 20px;
     overflow: hidden;
@@ -275,7 +276,7 @@ footer {
   }
 
   .environment {
-    row-gap: 70px;
+    row-gap: 50px;
   } 
 
   .environs {
@@ -283,12 +284,73 @@ footer {
   }
 
   .achievements {
-    row-gap: 40px;
-  } 
+    row-gap: 90px;
+  } .achievements img {
+    height: 60vh;
+  }
   
   .text {
     padding-bottom: 15px;
   }
 
+  footer {
+    margin-top: 120px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
 }  
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .nav-bar ul {
+    display: none;
+  } .logo {
+    font-size: 20px;
+  } .hamburger {
+    display: flex;
+  }
+
+  .sec {
+    min-height: 50vh;
+  }.hero h2 {
+    font-size: 40px;
+  } .hero p {
+    font-size: 20px;
+  } .hero button {
+    font-size: 20px;
+    padding: 10px 40px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .environment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 48px;
+  }
+
+  .achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  footer {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 767px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }.flex-container img {
+    width: 100%;
+    height: 60vh;
+  }
+
+}
