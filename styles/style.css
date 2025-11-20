@@ -277,7 +277,10 @@ footer {
 
   .environment {
     row-gap: 50px;
-  } 
+  } .environment img {
+    height: 100%;
+    width: 100%;
+  }
 
   .environs {
     margin-bottom: 60px;
