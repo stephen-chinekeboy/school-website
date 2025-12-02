@@ -318,9 +318,9 @@ footer {
   }
 
   .sec {
-    min-height: 50vh;
+    min-height: 60vh; 
   }.hero h2 {
-    font-size: 40px;
+    font-size: 50px;
   } .hero p {
     font-size: 20px;
   } .hero button {
@@ -343,6 +343,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
+  } .achieve {
+    height: 115vh;
   }
 
   footer {
@@ -360,4 +362,42 @@ footer {
     height: 60vh;
   }
 
+}
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .sec {
+    min-height: 80vh;
+  }.hero h2 {
+    font-size: 60px;
+  } .hero p {
+    font-size: 25px;
+  } .hero button {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .environment {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(200px, 1fr));
+    row-gap: 40px;
+  }
+  @media (min-width: 767px) and (max-width: 848px) {
+    .environment {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .achieve {
+    height: 100%;
+  }
+  .achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 20px;
+  } @media (min-width: 767px) and (max-width: 848px) {
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }

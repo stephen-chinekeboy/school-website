@@ -14,34 +14,35 @@
      <div class="input-container">
         <div class="inputs">
           <label for="f-name">First Name</label>
-          <input id="f-name" type="text" name="name" placeholder="First-Name">
+          <input class="first" id="f-name" type="text" name="name" placeholder="First-Name">
         </div>
 
         <div class="inputs">
           <label for="s-name">Second Name</label>
-          <input type="text" name="s-name" placeholder="Second-Name">
+          <input class="second" type="text" name="s-name" placeholder="Second-Name">
         </div>
 
         <div class="inputs">
           <label for="date">Date Of Birth</label>
-          <input id="date" type="date" name="date">
+          <input class="third" id="date" type="date" name="date">
         </div>
 
         <div class="inputs">
           <label for="address">House Address
-            <input id="address" type="text" name="address" placeholder="House Address">
+            <input class="fourth" id="address" type="text" name="address" placeholder="House Address">
           </label>
 
         </div>
 
         <div class="inputs">
           <label for="p-origin">Local Government</label>
-          <input id="p-origin" type="text" name="p-origin" placeholder="Place Of Origin" required>
+          <input class="fifth" id="p-origin" type="text" name="p-origin" placeholder="Place Of Origin" required>
         </div>
 
         <div class="inputs">
+         
           <label for="sel">Select State Of Origin</label>
-          <select name="select">
+          <select class="sixth" name="select">
             <option value="1">Enugu State</option>
             <option value="2">Jigawa</option>
             <option value="3">Abuja</option>
@@ -59,12 +60,16 @@
      </div>
 
      <div class="inputs">
-      <button>
+      <button onclick="
+        submit();
+        ">
         Submit
       </button>
      </div>
 
      <!-- <div class="backdrop"></div> -->
   </form>
+
+  <script src="/script.js"></script>
 </body>
 </html>
